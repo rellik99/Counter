@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!--wrapper-->
+
+    <div class="flex w-[100vw] h-[100vh] flex-col justify-center items-center bg-gray-700 gap-8">
+
+        <div class="text-lg text-blue-400 font-bold ">Increment And Decrement</div>
+        <div class="flex flex-row gap-8 p-3 px-5 border-2 bg-white">
+            <button onclick="increment()" class="text-[40px]">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div  class="text-[40px] border-x-2 px-5 " id="countervalue">
+                0
+            </div>
+            <button onclick="decrement()" class="text-[40px]">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
